@@ -28,29 +28,15 @@
 				<h1 style="font-weight: bold; color: #7B9554;">LA VENUS DE URBINO</h1>
 			</div>
 
-			<p class="txt-center m1-txt1 p-t-33 p-b-68">
+			<p class="txt-center m1-txt1 p-t-33 p-b-20">
 				Nuestra web está en construcción. Disculpe las molestias.
 			</p>
 
+			<h3 class="txt-center p-t-33 p-b-15" style="font-weight: bold; color: #7B9554;">FALTAN: </h3>
 			<div class="wsize2 flex-w flex-c hsize1 cd100">
 				<div class="flex-col-c-m size2 how-countdown">
-					<span class="l1-txt1 p-b-9 days">30</span>
+					<span class="l1-txt1 p-b-9 days" id="days">14</span>
 					<span class="s1-txt1">Días</span>
-				</div>
-
-				<div class="flex-col-c-m size2 how-countdown">
-					<span class="l1-txt1 p-b-9 hours">17</span>
-					<span class="s1-txt1">Horas</span>
-				</div>
-
-				<div class="flex-col-c-m size2 how-countdown">
-					<span class="l1-txt1 p-b-9 minutes">50</span>
-					<span class="s1-txt1">Minutos</span>
-				</div>
-
-				<div class="flex-col-c-m size2 how-countdown">
-					<span class="l1-txt1 p-b-9 seconds">39</span>
-					<span class="s1-txt1">Segundos</span>
 				</div>
 			</div>
 
@@ -79,19 +65,7 @@
 	<script src="vendor/countdowntime/moment-timezone-with-data.min.js"></script>
 	<script src="vendor/countdowntime/countdowntime.js"></script>
 	<script>
-		$('.cd100').countdown100({
-			/*Set Endtime here*/
-			/*Endtime must be > current time*/
-			endtimeYear: 0,
-			endtimeMonth: 0,
-			endtimeDate: 30,
-			endtimeHours: 0,
-			endtimeMinutes: 0,
-			endtimeSeconds: 0,
-			timeZone: "" 
-			// ex:  timeZone: "America/New_York"
-			//go to " http://momentjs.com/timezone/ " to get timezone
-		});
+
 	</script>
 <!--===============================================================================================-->
 	<script src="vendor/tilt/tilt.jquery.min.js"></script>
@@ -102,6 +76,11 @@
 	</script>
 <!--===============================================================================================-->
 	<script src="js/main.js"></script>
+	<script>
+		var a = moment("2020-09-12", "YYYY-MM-DD");
+		var b = moment(Date.now());
+		document.getElementById('days').textContent = a.diff(b, 'days');
+	</script>
 
 </body>
 </html>
