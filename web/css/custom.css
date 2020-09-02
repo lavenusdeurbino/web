@@ -1,1 +1,24 @@
 /* your styles go here */
+
+.user-container {
+    margin-top: 150px;
+    margin-bottom: 200px;
+}
+
+@media screen and (max-width: 999.99px) {
+    .user-container {
+        margin-top: 100px;
+        margin-bottom: 150px;
+    }
+    .main-logo {
+        margin-left: 0px !important;
+    }
+}
+
+.image-about-me {
+    margin-top: -100px;
+}
+
+.main-logo {
+    margin-left: 140px;
+}
