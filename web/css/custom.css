@@ -29,3 +29,34 @@
 .image-insta {
     height: 460px ;
 }
+
+.banner {
+    min-width: 100%;
+    background-color: #333; 
+    color: #fff; 
+    text-align: center; 
+    border-radius: 2px; 
+    padding: 16px 0px 10px 0px; 
+    position: fixed; 
+    z-index: 1; 
+    bottom: 0px; 
+
+}
+
+.banner-text {
+    padding: 5px;        
+    color: white;
+    justify-content: center;
+}
+
+.banner-accept-button {
+    background-color: #333;
+    border: 1px solid white;
+    color: white;
+}
+
+.banner-read-more-button {
+    background-color: #333;
+    border: none;
+    color: white;
+}
