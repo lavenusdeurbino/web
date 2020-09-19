@@ -36,7 +36,7 @@
     </script>
 </head>
 
-<body>
+<body onload="checkCookies()">
     <!-- navbar-->
     <header class="header">
         <nav class="navbar navbar-expand-lg navbar-light py-4 index-forward bg-white">
@@ -316,15 +316,16 @@
             </div>
         </div>
     </footer>
-    <div class="banner">
+    <div class="banner" id="banner-cookies">
         <span class="banner-text">En esta web utilizamos cookies propias y de terceros para mejorar nuestros servicios,
-          rendimiento y análisis de sus hábitos de navegación. Si continua navegando, consideramos que acepta su uso.</span>
+            rendimiento y análisis de sus hábitos de navegación. Si continua navegando, consideramos que acepta su
+            uso.</span>
         &nbsp;
         &nbsp;
-        <button class="banner-accept-button">Aceptar</button>
+        <button class="banner-accept-button" onClick="setCookie('GDPRVenus','analyticsVenus',30)">Aceptar</button>
         &nbsp;
-        <a href="cookies-policy.html"><button class="banner-read-more-button">Leer más</button></a>
-      </div>
+        <a href="../../cookies-policy.html"><button class="banner-read-more-button">Leer más</button></a>
+    </div>
     <!-- JavaScript files-->
     <script src="../../vendor/jquery/jquery.min.js"></script>
     <script src="../../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
