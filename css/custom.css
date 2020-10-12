@@ -1,5 +1,8 @@
 /* your styles go here */
 
+strong {
+    font-weight: bold;
+}
 .user-container {
     margin-top: 150px;
     margin-bottom: 200px;
